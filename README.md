@@ -13,7 +13,7 @@ go get github.com/GokselKUCUKSAHIN/jsonx
 ### JSON Serialization and Deserialization
 
 ```go
-import "github.com/your-repo/jsonx"
+import "github.com/GokselKUCUKSAHIN/jsonx"
 
 // Struct to be serialized
 type User struct {
