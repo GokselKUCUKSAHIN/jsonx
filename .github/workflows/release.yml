@@ -9,9 +9,6 @@ permissions:
   contents: write
 
 jobs:
-  builds:
-    - skip: true
-
   goreleaser:
     runs-on: ubuntu-latest
     steps:
