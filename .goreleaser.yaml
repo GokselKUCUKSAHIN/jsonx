@@ -1,0 +1,13 @@
+project_name: jsonx
+
+release:
+  github:
+    name: jsonx
+    owner: GokselKUCUKSAHIN
+
+before:
+  hooks:
+    - go mod tidy
+
+builds:
+  - skip: true
