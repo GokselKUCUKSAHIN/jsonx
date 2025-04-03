@@ -2,7 +2,7 @@ module github.com/GokselKUCUKSAHIN/jsonx
 
 go 1.18
 
-require github.com/bytedance/sonic v1.13.1
+require github.com/bytedance/sonic v1.13.2
 
 require (
 	github.com/bytedance/sonic/loader v0.2.4 // indirect
