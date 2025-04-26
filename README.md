@@ -1,6 +1,6 @@
 # jsonx
 
-A high-performance JSON serialization and deserialization library built on top of `sonic`, offering efficient and flexible JSON handling in Go.
+A high-performance JSON serialization and deserialization library built on top of `jsoniter`, offering efficient and flexible JSON handling in Go.
 
 ## Installation
 
@@ -56,7 +56,7 @@ if err != nil {
 
 ## Features
 
-- **Fast JSON encoding/decoding** powered by `sonic`
+- **Fast JSON encoding/decoding** powered by `jsoniter`
 - **Convenient casting functions** for structured data
 - **Minimal performance overhead** with efficient memory usage
 

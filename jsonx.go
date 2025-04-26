@@ -1,21 +1,28 @@
 package jsonx
 
-import "github.com/bytedance/sonic"
+import (
+	stringutil "github.com/GokselKUCUKSAHIN/jsonx/internal/string-util"
+	jsoniter "github.com/json-iterator/go"
+)
 
 func Unmarshal(buf []byte, val any) error {
-	return sonic.Unmarshal(buf, val)
+	return jsoniter.Unmarshal(buf, val)
 }
 
 func UnmarshalString(buf string, val any) error {
-	return sonic.UnmarshalString(buf, val)
+	return jsoniter.Unmarshal(stringutil.Byte(buf), val)
 }
 
 func Marshal(val any) ([]byte, error) {
-	return sonic.Marshal(val)
+	return jsoniter.Marshal(val)
 }
 
 func MarshalString(val any) (string, error) {
-	return sonic.MarshalString(val)
+	res, err := jsoniter.Marshal(val)
+	if err != nil {
+		return "", err
+	}
+	return stringutil.String(res), nil
 }
 
 func Cast[Model any](buf []byte, err error) (*Model, error) {
